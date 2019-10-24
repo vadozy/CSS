@@ -20,7 +20,10 @@ div#one {
 
 div#two {display: inline-flex;}
 div {border: 1px dashed; background: silver;}
-div > * {border: 1px solid; background: #AAA;}
+div > * {
+  border: 1px solid;
+  background: #AAA;
+}
 div p {margin: 0;}
 
 

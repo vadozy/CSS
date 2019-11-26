@@ -19,6 +19,13 @@ body {
   /* transition: color 200ms ease-in 50ms; */
 }
 
+.sandbox {
+  margin: 10px 0;
+  border: 1px solid cyan;
+  height: 10%;
+  overflow: hidden;
+}
+
 .acadian-show {
   position: relative;
   transition-property: height;

@@ -11,7 +11,7 @@ body {
 .button01:hover {
   color: red;
   /* color: rebeccapurple; */
-  transition: color 1000ms ease-in 100ms;
+  /* transition: color 1000ms ease-in 100ms; */
 }
 
 .button01:active {

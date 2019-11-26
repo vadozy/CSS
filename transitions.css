@@ -1,0 +1,89 @@
+body {
+  font-family: Tahoma, Verdana, sans-serif;
+  border: solid #c8c8c8 1px;
+  margin: 0;
+}
+
+.button01 {
+  transition: color 2000ms ease-in 100ms;
+}
+
+.button01:hover {
+  color: red;
+  /* color: rebeccapurple; */
+  transition: color 1000ms ease-in 100ms;
+}
+
+.button01:active {
+  color: magenta;
+  /* transition: color 200ms ease-in 50ms; */
+}
+
+.acadian-show {
+  position: relative;
+  transition-property: height;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in;
+  transition-delay: 50ms;
+  height: 50%;
+  overflow-y: hidden;
+}
+
+.acadian-hide {
+  position: relative;
+  transition-property: height;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in;
+  transition-delay: 50ms;
+  height: 0;
+  overflow-y: hidden;
+}
+
+.acadian-showX {
+  transition-property: transform;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in;
+  transition-delay: 50ms;
+  transform: scale(1, 1);
+  transform-origin: top center;
+}
+
+.acadian-hideX {
+  transition-property: transform;
+  transition-duration: 200ms;
+  transition-timing-function: ease-in;
+  transition-delay: 50ms;
+  transform: scale(1, 0);
+  transform-origin: top center;
+}
+
+
+.acadian-showZ {
+  animation-name: fadeIn;
+}
+
+.acadian-hideZ {
+  animation-name: fadeOut;
+}
+
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+      transform: translateY(0);
+  } 
+  100% {
+      opacity: 1;
+      transform: translateY(100%);
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+      opacity: 1;
+      transform: translateY(100%);
+  } 
+  100% {
+      opacity: 0;
+      transform: translateY(0);
+  }
+}

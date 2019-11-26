@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Transitions</title>
+  <link rel="stylesheet" type="text/css" href="transitions.css">
+
+  <script>
+    function hide(cls) {
+      console.log('DEBUG 01');
+      const elements = document.getElementsByClassName(cls);
+      for (el of elements) {
+        el.classList.add('acadian-hide');
+        el.classList.remove('acadian-show');
+      }
+    }
+
+    function show(cls) {
+      console.log('DEBUG 02');
+      const elements = document.getElementsByClassName(cls);
+      for (el of elements) {
+        el.classList.remove('acadian-hide');
+        el.classList.add('acadian-show');
+      }
+    }
+  </script>
+
+</head>
+<body>
+  <div>
+    Transitions
+  </div>
+
+  <div>
+    <button class="button01" onclick="show('row')">
+      Show
+    </button>
+  </div>
+
+  <div class="row">
+      <label class="lbl1" for="schedule">Schedule:</label>
+      <br/>
+      <select name="schedule" id="schedule">
+          <option value="ANY" selected="selected">Daily</option>
+          <option value="FIRST">Monthly</option>
+          <option value="US-FIRST" title="to be used with simulation holdings">US-Monthly</option>
+      </select>
+  </div>
+
+
+  <div>
+      <button class="button01" onclick="hide('row')">
+        Hide
+      </button>
+  </div>
+
+  <div style="margin">
+    Sandbox
+  </div>
+  <div class="sandbox">
+    <label class="lbl1" for="schedule">Schedule:</label>
+    <br/>
+    <select name="schedule" id="schedule">
+        <option value="ANY" selected="selected">Daily</option>
+        <option value="FIRST">Monthly</option>
+        <option value="US-FIRST" title="to be used with simulation holdings">US-Monthly</option>
+    </select>
+</div>
+
+</body>
+</html>
+
